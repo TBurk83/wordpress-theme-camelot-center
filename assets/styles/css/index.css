@@ -1,0 +1,259 @@
+/*
+Editor stylesheet
+
+1. Import the Bootstrap CSS (the same CSS as is used for the front-end of this theme).
+2. Import your theme's CSS (the same as is used for the front-end).
+3. Then add some CSS to improve your experience in the tiny-mce editor.
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s; }
+
+body {
+  background-color: #106955;
+  font-family: 'Open Sans', sans-serif; }
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5 {
+    font-family: 'Open Sans', sans-serif;
+    color: #106955;
+    font-weight: 600; }
+
+a, .btn {
+  cursor: pointer; }
+
+/* Max content widths */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto; }
+
+/* Navbar */
+.navbar-topbar {
+  border-radius: 0; }
+
+.navbar .dropdown-menu li {
+  width: 100%;
+  margin-left: 0 !important; }
+
+/*
+Header logo
+If you require a Site title and a logo, an example of how to do this is provided below (use your own logo):
+
+#site-title a {
+  display: inline-block;
+  padding-left 60px;
+  background: url('../../img/logo.png') 0 0 no-repeat;
+}
+*/
+/* Main content */
+#content-wrap {
+  background-color: #fff; }
+  #content-wrap article {
+    margin: 40px 0; }
+  #content-wrap header {
+    margin: 20px 0; }
+  #content-wrap section {
+    margin-bottom: 20px; }
+  #content-wrap footer {
+    padding-bottom: 20px; }
+
+.page-header {
+  background: #f9f9f9 none repeat scroll 0 0;
+  border-bottom: 1px solid #eee;
+  margin: 40px 0 20px;
+  padding: 10px 14px; }
+
+/* Sidebar */
+.sidebar {
+  margin-top: 20px; }
+  .sidebar section {
+    margin-bottom: 40px; }
+  .sidebar ul,
+  .sidebar ol {
+    list-style-type: none;
+    padding: 0; }
+  .sidebar li {
+    margin: 10px 0; }
+
+/* Hide form placeholders on focus */
+input:focus::-webkit-input-placeholder, input:focus:-moz-placeholder, input:focus::-moz-placeholder {
+  color: transparent; }
+
+/* FF 4-18 */
+/* FF 19+ */
+textarea:focus::-webkit-input-placeholder, textarea:focus:-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: transparent; }
+
+/* FF 4-18 */
+/* FF 19+ */
+/* Comments */
+#respond {
+  margin-top: 40px; }
+
+ol.commentlist {
+  counter-reset: li;
+  /* Initiate a counter */
+  padding: 0; }
+  ol.commentlist ul {
+    padding: 0; }
+  ol.commentlist > li {
+    position: relative;
+    margin: 0 0 20px 0;
+    list-style: none; }
+    ol.commentlist > li:before {
+      content: "Thread " counter(li);
+      /* Use the counter as content */
+      counter-increment: li;
+      /* Increment the counter by 1 */
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      border-bottom-left-radius: 4px;
+      padding: 5px 20px 5px 10px;
+      color: #999; }
+  ol.commentlist li ol,
+  ol.commentlist li ul {
+    list-style-type: none;
+    margin: 0; }
+
+.commentlist li {
+  padding: 20px; }
+  .commentlist li li {
+    background: #f9f9f9; }
+    .commentlist li li li {
+      background: #fff; }
+      .commentlist li li li li {
+        background: #f9f9f9; }
+        .commentlist li li li li li li {
+          background: #fff; }
+
+.commentlist ul li {
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+.reply p {
+  margin: 0; }
+
+/* Site footer */
+.site-footer {
+  padding: 40px 0; }
+  .site-footer ul,
+  .site-footer ol {
+    list-style-type: none;
+    padding: 0; }
+  .site-footer li {
+    margin: 10px 0; }
+
+.site-sub-footer p,
+.site-footer p {
+  text-align: center; }
+
+/*--------------------------------------------------------------
+2.0 Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+.social {
+  font-size: 1.5rem; }
+  .social ul {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0; }
+    .social ul li {
+      display: inline-block; }
+      .social ul li a {
+        color: #06271f;
+        border: 1px solid #06271f;
+        display: inline-block;
+        height: 40px;
+        text-align: center;
+        width: 40px; }
+        .social ul li a:hover, .social ul li a:focus {
+          background-color: #fff; }
+
+footer#site-footer {
+  padding: 1rem;
+  background-color: #106955;
+  color: #03100d;
+  border-top: #03100d; }
+  footer#site-footer p {
+    display: inline-block;
+    margin-top: 0.5rem; }
+  footer#site-footer a {
+    color: #03100d; }
+    footer#site-footer a:hover {
+      color: #21d8af;
+      text-decoration: underline; }
+
+.navbar {
+  background-color: #106955;
+  border-bottom: 1px solid #03100d; }
+  .navbar .navbar-nav .nav-link {
+    color: #03100d; }
+    .navbar .navbar-nav .nav-link:hover {
+      color: #21d8af; }
+  .navbar .btn-outline-info {
+    color: #03100d;
+    background-image: none;
+    background-color: transparent;
+    border-color: #03100d; }
+    .navbar .btn-outline-info:hover {
+      color: #03100d;
+      background-color: #fff;
+      border-color: #03100d; }
+
+.front-page .col-sm-12 {
+  padding: 0; }
+
+.front-page article {
+  margin: 0; }
+  .front-page article header {
+    display: none; }
+
+.front-page .sub-footer {
+  background: #fff;
+  min-height: 210px;
+  border-top: 1px solid #03100d; }
+  .front-page .sub-footer .col-sm-4 {
+    padding: 1rem; }

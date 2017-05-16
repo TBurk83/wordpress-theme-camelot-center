@@ -1,0 +1,23 @@
+.navbar {
+    background-color: $prime;
+    border-bottom:1px solid  darken($prime, 20%);
+    .navbar-nav {
+        .nav-link {
+            color: darken($prime, 20%);
+            &:hover {
+                color: lighten($prime, 25%);
+            }
+        }
+    }
+    .btn-outline-info {
+        color: darken($prime, 20%);
+        background-image: none;
+        background-color: transparent;
+        border-color: darken($prime, 20%);
+        &:hover {
+            color: darken($prime, 20%);
+            background-color: #fff;
+            border-color: darken($prime, 20%);
+        }
+    }
+}

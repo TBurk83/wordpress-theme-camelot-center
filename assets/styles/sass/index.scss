@@ -1,0 +1,17 @@
+/*
+Editor stylesheet
+
+1. Import the Bootstrap CSS (the same CSS as is used for the front-end of this theme).
+2. Import your theme's CSS (the same as is used for the front-end).
+3. Then add some CSS to improve your experience in the tiny-mce editor.
+*/
+
+@import '../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'var';
+@import 'base';
+@import 'access';
+@import 'social';
+@import 'footer';	
+@import 'nav';	
+@import 'front-page'

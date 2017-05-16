@@ -1,0 +1,22 @@
+.front-page {
+    .col-sm-12 {
+        padding: 0;
+    }
+    article {
+        margin: 0;
+        header {
+            display: none;
+        }
+    }
+    .sub-footer {
+        background: #fff;
+        min-height: 240px;
+        border-top:1px solid darken($prime, 20%);
+        .col-sm-4 {
+        	padding:1rem;
+        }
+        // .widget-header {
+        //     display: none;
+        // }
+    }
+}
